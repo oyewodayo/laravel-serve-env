@@ -1,0 +1,26 @@
+{
+    "name": "oyewodayo/laravel-serve-env",
+    "description": "Add .env configurable port to php artisan serve",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "oyewodayo\\ServeEnv\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "oyewodayo\\ServeEnv\\ServeEnvServiceProvider"
+            ]
+        }
+    },
+   "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0|^9.0|^12.0",
+        "illuminate/console": "^8.0|^9.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^9.0|^12.0"
+    }
+}
